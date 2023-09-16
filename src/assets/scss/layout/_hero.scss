@@ -1,0 +1,77 @@
+.hero {
+    overflow: hidden;
+    .hero-section {
+        position: relative;
+        display: flex;
+        .hero-text {
+            &::after {
+                content: "";
+                position: absolute;
+                right: -109px;
+                top: 0;
+                width: 726px;
+                height: 760px;
+                background-image: url(../imgs/sections/rectangle.png);
+                background-size: cover;
+                @include media-breakpoint-down(xxl) {
+                    display: none;
+                }
+            }
+            padding-top: 111px;
+            max-width: 702px;
+            height: 760px;
+            .hero-text-tagline {
+                color: var(--color-gray-gray-900, #101828);
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Chivo;
+                font-size: 80px;
+                font-weight: 400;
+                line-height: 1.1; /* 110% */
+                letter-spacing: -0.4px;
+                width: 100%;
+                min-height: 302px;
+                margin-bottom: 7px;
+                @include media-breakpoint-down(md) {
+                    font-size: 55px;
+                    min-height:auto;
+                }
+                span {
+                    color: var(--color-palette-green-900, #006D77);
+                }
+            }
+            .hero-text-preface {
+                color: var(--color-gray-gray-500, #667085);
+                font-feature-settings: 'clig' off, 'liga' off;
+                /* Body/Lead large */
+                font-family: Noto Sans;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 1.333; /* 133.333% */
+                max-width: 610px;
+                margin-bottom: 52px;
+            }
+            .hero-text-buttons {
+                .btn-learn {
+                    color: var(--color-gray-gray-900, #101828);
+                    text-align: center;
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    /* Heading/Heading 6 */
+                    font-family: Chivo;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.222; /* 122.222% */
+                    &:hover {
+                        color: $color-gray-900;
+                        background-color: $background-gray-100;
+                        border-radius: 50px;
+                        font-size: $font-lg;
+                        line-height: 22px;
+                        font-family: $font-text;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

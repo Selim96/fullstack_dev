@@ -26,6 +26,10 @@
 }
 @include media-breakpoint-down(xl) {
     //max-width: 1199.98px
+    .burger-icon
+    {
+        top: 25px;
+    }
     .custom-class {
         display: block;
     }
@@ -877,7 +881,7 @@
 }
 
 /*OTHER SCREEN*/
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (max-width: 1399px) {
     .header-right {
         display: none;
     }
