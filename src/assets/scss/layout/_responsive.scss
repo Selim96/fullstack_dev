@@ -26,7 +26,7 @@
 }
 @include media-breakpoint-down(xl) {
     //max-width: 1199.98px
-    .burger-icon
+    .header-left>.header-nav>.burger-icon
     {
         top: 25px;
     }
