@@ -13,9 +13,9 @@
                         a(href='tel:2395550108') (239) 555-0108
                         a(href='mailto:contact@company.com') contact@company.com
                 form.form 
-                    input.input-name(name='name' placeholder='Name')
-                    input.input-email(name='email' placeholder='Email')
-                    textarea(name="message", cols="30", rows="6" placeholder='Message')
+                    input.input-name(name='name' id='name' placeholder='Name' required )
+                    input.input-email(name='email' id='email' placeholder='Email' required )
+                    textarea(name="message" id='message' cols="30", rows="6" placeholder='Message' required )
                     button.btn.btn-black.icon-arrow-right-white(type='submit') Send Message 
                     .lastparagraf
                         span By clicking contact us button, you agree our terms and policy,
